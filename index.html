@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <link rel="icon" type="image/png" href="https://img.icons8.com/?size=100&id=UuZbMO5c0AHj&format=png&color=000000">
+  
   <title>Atul Gaikwad | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -11,17 +13,28 @@
 
   <!-- Navbar -->
   <header class="navbar">
-    <nav>
-      <ul>
-        <li><a href="#home" class="active">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#certifications">Certifications</a></li>
-        <li><a href="#achievements">Achievements</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="nav-container">
+      <div class="logo">Atul<span>.</span></div>
+
+      <nav>
+        <ul id="navLinks">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Hamburger Button -->
+      <div class="menu-btn" id="menuBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
   </header>
 
   <!-- Hero Section -->
@@ -106,7 +119,6 @@
     <h2 class="section-title">Projects</h2>
 
     <div class="projects-grid">
-
       <div class="project-card">
         <h3>Face Anti-Spoofing Detection System</h3>
         <p>
@@ -130,7 +142,6 @@
           alerts, and remote monitoring, along with a mobile interface.
         </p>
       </div>
-
     </div>
   </section>
 
@@ -175,5 +186,6 @@
     <p>© 2026 Atul Gaikwad | Portfolio Website</p>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
