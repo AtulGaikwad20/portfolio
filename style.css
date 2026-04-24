@@ -6,7 +6,7 @@
 }
 
 body {
-  background: #050a14;
+  background: #070312;
   color: #ffffff;
   line-height: 1.7;
 }
@@ -17,25 +17,42 @@ body {
   width: 100%;
   top: 0;
   left: 0;
-  background: rgba(5, 10, 20, 0.95);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 14px 60px;
+  background: rgba(7, 3, 18, 0.95);
   z-index: 1000;
   backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 14px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.logo span {
+  color: #fbbf24;
+}
+
+/* Nav Links */
 nav ul {
   display: flex;
   list-style: none;
-  gap: 30px;
+  gap: 28px;
 }
 
 nav ul li a {
   text-decoration: none;
-  color: #cfcfcf;
+  color: #dcdcdc;
   font-size: 15px;
   font-weight: 500;
   transition: 0.3s;
@@ -43,12 +60,27 @@ nav ul li a {
 
 nav ul li a:hover,
 nav ul li a.active {
-  color: #38bdf8;
+  color: #fbbf24;
+}
+
+/* Hamburger Menu */
+.menu-btn {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.menu-btn span {
+  width: 26px;
+  height: 3px;
+  background: #fbbf24;
+  border-radius: 3px;
 }
 
 /* Hero */
 .hero {
-  padding: 150px 60px 90px;
+  padding: 150px 25px 90px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -68,46 +100,46 @@ nav ul li a.active {
 }
 
 .hero-content h1 span {
-  color: #38bdf8;
+  color: #fbbf24;
 }
 
 .hero-content h2 {
   font-size: 20px;
-  color: #a9b3c1;
+  color: #c4b5fd;
   margin-bottom: 18px;
   font-weight: 500;
 }
 
 .hero-content p {
   font-size: 16px;
-  color: #cbd5e1;
+  color: #d1d5db;
 }
 
 /* Hero Card */
 .hero-card {
-  background: #0f172a;
+  background: #120824;
   padding: 28px;
   border-radius: 14px;
   width: 340px;
-  box-shadow: 0px 0px 20px rgba(56, 189, 248, 0.12);
-  border: 1px solid rgba(56, 189, 248, 0.12);
+  box-shadow: 0px 0px 20px rgba(251, 191, 36, 0.12);
+  border: 1px solid rgba(251, 191, 36, 0.12);
 }
 
 .hero-card h3 {
   margin-bottom: 15px;
-  color: #38bdf8;
+  color: #fbbf24;
   font-size: 18px;
 }
 
 .hero-card p {
   margin-bottom: 10px;
-  color: #dbe4f0;
+  color: #e5e7eb;
   font-size: 15px;
 }
 
 /* Sections */
 .section {
-  padding: 85px 60px;
+  padding: 85px 25px;
   max-width: 1200px;
   margin: auto;
 }
@@ -115,13 +147,13 @@ nav ul li a.active {
 .section-title {
   font-size: 32px;
   margin-bottom: 20px;
-  color: #38bdf8;
+  color: #fbbf24;
   font-weight: 700;
 }
 
 .section-text {
   font-size: 16px;
-  color: #cbd5e1;
+  color: #d1d5db;
   max-width: 900px;
 }
 
@@ -134,7 +166,7 @@ nav ul li a.active {
 }
 
 .info-card {
-  background: #0f172a;
+  background: #120824;
   padding: 22px;
   border-radius: 14px;
   transition: 0.3s;
@@ -143,7 +175,7 @@ nav ul li a.active {
 
 .info-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0px 0px 20px rgba(56, 189, 248, 0.15);
+  box-shadow: 0px 0px 20px rgba(251, 191, 36, 0.12);
 }
 
 .info-card h3 {
@@ -154,7 +186,7 @@ nav ul li a.active {
 
 .info-card ul {
   padding-left: 18px;
-  color: #cbd5e1;
+  color: #d1d5db;
 }
 
 .info-card ul li {
@@ -170,16 +202,16 @@ nav ul li a.active {
 }
 
 .skill-box {
-  background: #0f172a;
+  background: #120824;
   padding: 20px;
   border-radius: 14px;
-  border-left: 4px solid #38bdf8;
+  border-left: 4px solid #a855f7;
   transition: 0.3s;
 }
 
 .skill-box:hover {
   transform: translateY(-5px);
-  box-shadow: 0px 0px 18px rgba(56, 189, 248, 0.15);
+  box-shadow: 0px 0px 18px rgba(168, 85, 247, 0.15);
 }
 
 .skill-box h3 {
@@ -189,7 +221,7 @@ nav ul li a.active {
 }
 
 .skill-box p {
-  color: #cbd5e1;
+  color: #d1d5db;
 }
 
 /* Projects */
@@ -201,7 +233,7 @@ nav ul li a.active {
 }
 
 .project-card {
-  background: #0f172a;
+  background: #120824;
   padding: 22px;
   border-radius: 14px;
   transition: 0.3s;
@@ -210,7 +242,7 @@ nav ul li a.active {
 
 .project-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0px 0px 22px rgba(56, 189, 248, 0.18);
+  box-shadow: 0px 0px 22px rgba(251, 191, 36, 0.12);
 }
 
 .project-card h3 {
@@ -221,7 +253,7 @@ nav ul li a.active {
 
 .project-card p {
   font-size: 14.5px;
-  color: #cbd5e1;
+  color: #d1d5db;
 }
 
 /* Certifications */
@@ -233,26 +265,26 @@ nav ul li a.active {
 }
 
 .cert-card {
-  background: #0f172a;
+  background: #120824;
   padding: 16px;
   border-radius: 12px;
-  border: 1px solid rgba(56, 189, 248, 0.15);
-  color: #dbe4f0;
+  border: 1px solid rgba(251, 191, 36, 0.12);
+  color: #e5e7eb;
   transition: 0.3s;
 }
 
 .cert-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0px 0px 18px rgba(56, 189, 248, 0.12);
+  box-shadow: 0px 0px 18px rgba(251, 191, 36, 0.10);
 }
 
 /* Achievements */
 .achievement-card {
-  background: #0f172a;
+  background: #120824;
   padding: 22px;
   border-radius: 14px;
-  border-left: 4px solid #38bdf8;
-  color: #dbe4f0;
+  border-left: 4px solid #fbbf24;
+  color: #e5e7eb;
 }
 
 .achievement-card p {
@@ -261,7 +293,7 @@ nav ul li a.active {
 
 /* Contact */
 .contact-box {
-  background: #0f172a;
+  background: #120824;
   padding: 28px;
   border-radius: 14px;
   width: 100%;
@@ -271,12 +303,12 @@ nav ul li a.active {
 
 .contact-box p {
   margin-bottom: 14px;
-  color: #dbe4f0;
+  color: #e5e7eb;
   font-size: 15px;
 }
 
 .contact-box a {
-  color: #38bdf8;
+  color: #fbbf24;
   text-decoration: none;
 }
 
@@ -288,32 +320,44 @@ nav ul li a.active {
 .footer {
   padding: 20px;
   text-align: center;
-  background: #030712;
-  color: #94a3b8;
+  background: #05010d;
+  color: #9ca3af;
   font-size: 14px;
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 /* Responsive */
 @media (max-width: 900px) {
+  .menu-btn {
+    display: flex;
+  }
+
+  nav ul {
+    position: absolute;
+    top: 65px;
+    right: 20px;
+    background: #120824;
+    flex-direction: column;
+    width: 220px;
+    padding: 20px;
+    border-radius: 12px;
+    display: none;
+    gap: 18px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
   .hero {
     flex-direction: column;
     text-align: center;
     padding: 130px 20px 70px;
   }
 
-  nav ul {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 14px;
-  }
-
-  .navbar {
-    padding: 14px 15px;
-  }
-
-  .section {
-    padding: 70px 20px;
+  .hero-content h1 {
+    font-size: 38px;
   }
 
   .hero-card {
